@@ -1,0 +1,9 @@
+
+<ul> <%@articles.each do |article| %>
+  <li> <a href="/articles/<%= article.id %>"> <%= article.name %> </a> </li>
+
+  <% end %>
+  </ul>
+ <a href= '/articles/new'> Create New Article </a>
+ <br>
+ <a href='/categories'> Back to Categories</a>

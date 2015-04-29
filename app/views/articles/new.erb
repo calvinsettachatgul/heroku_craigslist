@@ -1,0 +1,12 @@
+<% @article.errors.full_messages.each do |error| %>
+  <h3><%= error %></h3>
+<% end %>
+<form method="post" action="/articles">
+  <input type="text" name="name" placeholder="name" value="<%= @article.name %>" />
+  <input type="text" name="price" placeholder="price" value="<%= @article.price %>" />
+  <input type="text" name="description" placeholder="description" value="<%= @article.description %>" />
+  <input type="text" name="email" placeholder="email" value="<%= @article.email %>" />
+  <input type="text" name="category_id" placeholder="category id" value="<%= @article.category_id%>" />
+
+  <input type="submit" value="create article" />
+</form>
