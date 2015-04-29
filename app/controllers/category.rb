@@ -5,9 +5,6 @@
 # GET /photos/:id/edit  photos#edit return an HTML form for editing a photo
 # PATCH/PUT /photos/:id photos#update update a specific photo
 # DELETE  /photos/:id photos#destroy  delete a specific photo
-get '/' do
-	redirect '/categories'
-end
 
 get '/categories' do
   @categories = Category.all
